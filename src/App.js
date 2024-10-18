@@ -15,7 +15,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://server-1436468314.us-east-1.elb.amazonaws.com/test/demo', {
+      const response = await fetch('https://server-1436468314.us-east-1.elb.amazonaws.com/test/demo', {
         // const response = await fetch('http://localhost:8080/test/demo', {
 
         method: 'POST',
@@ -38,7 +38,7 @@ function App() {
 
   const getUsers = async () => {
     try {
-      const response = await fetch('http://server-1436468314.us-east-1.elb.amazonaws.com/test', {
+      const response = await fetch('https://server-1436468314.us-east-1.elb.amazonaws.com/test', {
         // const response = await fetch('http://localhost:8080/test', {
 
         method: 'GET',
