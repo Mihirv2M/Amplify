@@ -15,8 +15,8 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // const response = await fetch('http://node-alb-199302115.us-east-1.elb.amazonaws.com/test/demo', {
-        const response = await fetch('http://localhost:8080/test/demo', {
+      const response = await fetch('http://alv-747740184.us-east-1.elb.amazonaws.com/test/demo', {
+        // const response = await fetch('http://localhost:8080/test/demo', {
 
         method: 'POST',
         body: JSON.stringify(form),
@@ -38,8 +38,8 @@ function App() {
 
   const getUsers = async () => {
     try {
-      // const response = await fetch('http://node-alb-199302115.us-east-1.elb.amazonaws.com/test', {
-        const response = await fetch('http://localhost:8080/test', {
+      const response = await fetch('http://alv-747740184.us-east-1.elb.amazonaws.com/test', {
+        // const response = await fetch('http://localhost:8080/test', {
 
         method: 'GET',
       });
